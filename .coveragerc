@@ -1,0 +1,3 @@
+[run]
+source = ecs_cicd_demo
+omit = ecs_cicd_demo/test*
