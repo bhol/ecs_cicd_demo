@@ -5,6 +5,7 @@
             "name": "ecs-cicd-demo",
             "image": "<IMAGE1_NAME>",
             "essential": true,
+            "entryPoint": ["./docker_script.sh"],
             "portMappings": [
                 {
                     "hostPort": 80,
@@ -20,5 +21,5 @@
     "networkMode": "awsvpc",
     "cpu": "256",
     "memory": "512",
-    "family": "ecs-cicd-demo-family"
+    "family": "ecs-cicd-demo-web"
 }

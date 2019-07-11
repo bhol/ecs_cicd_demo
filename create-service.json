@@ -1,0 +1,29 @@
+{
+    "taskDefinition": "ecs-cicd-demo-web:1",
+    "cluster": "ecs-cicd-demo-cluster",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:387279199735:targetgroup/target-group-1/1f087c0f69b240e9",
+            "containerName": "ecs-cicd-demo",
+            "containerPort": 80
+        }
+    ],
+    "desiredCount": 2,
+    "launchType": "FARGATE",
+    "schedulingStrategy": "REPLICA",
+    "deploymentController": {
+        "type": "CODE_DEPLOY"
+    },
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "subnet-04c513c4d94cba704",
+                "subnet-04e9ff4449701228d"
+            ],
+            "securityGroups": [
+                "sg-0e40a2c7c0a6b31b4"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    }
+}
