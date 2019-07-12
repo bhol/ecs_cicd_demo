@@ -8,9 +8,9 @@
             "entryPoint": ["./docker_script.sh"],
             "portMappings": [
                 {
-                    "hostPort": 80,
+                    "hostPort": 6543,
                     "protocol": "tcp",
-                    "containerPort": 80
+                    "containerPort": 6543
                 }
             ]
         }
