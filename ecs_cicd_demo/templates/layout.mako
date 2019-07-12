@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="${request.locale_name}">
+<html lang="${request.locale_name}" ng-app="demoApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +12,10 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <link rel="shortcut icon" href="${request.static_url('ecs_cicd_demo:static/images/favicon.jpg')}"">
+
     <!-- Custom styles for this scaffold -->
-    <link href="${request.static_url('ecs_cicd_demo:static/theme.css')}" rel="stylesheet">
+    <link href="${request.static_url('ecs_cicd_demo:static/css/theme.css')}" rel="stylesheet">
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <img class="logo img-responsive" src="${request.static_url('ecs_cicd_demo:static/get-cloudier-logo.jpg') }" alt="GET CLOUDIER logo">
+            <img class="logo img-responsive" src="${request.static_url('ecs_cicd_demo:static/images/get-cloudier-logo.jpg') }" alt="GET CLOUDIER logo">
           </div>
           <div class="col-md-10">
             ${ next.body() }
@@ -43,6 +45,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+    <script src="${request.static_url('ecs_cicd_demo:static/js/home.js') }"></script>
   </body>
 </html>
 
