@@ -7,3 +7,10 @@ Resources:
         LoadBalancerInfo:
           ContainerName: "ecs-cicd-demo"
           ContainerPort: 80
+
+Hooks:
+  - BeforeInstall:
+  - AfterInstall:
+  - AfterAllowTestTraffic:
+  - BeforeAllowTraffic:
+  - AfterAllowTraffic:
