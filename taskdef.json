@@ -3,14 +3,14 @@
     "containerDefinitions": [
         {
             "name": "ecs-cicd-demo",
-            "image": "<IMAGE1_NAME>",
+            "image": "387279199735.dkr.ecr.us-west-2.amazonaws.com/ecs_cicd_demo",
             "essential": true,
             "entryPoint": ["./docker_script.sh"],
             "portMappings": [
                 {
-                    "hostPort": 6543,
+                    "hostPort": 80,
                     "protocol": "tcp",
-                    "containerPort": 6543
+                    "containerPort": 80
                 }
             ]
         }
