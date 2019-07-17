@@ -1,7 +1,4 @@
 version: 0.0
-files:
-  - source: /
-    destination: /ecs_cicd_demo
 Resources:
   - TargetService:
       Type: AWS::ECS::Service
