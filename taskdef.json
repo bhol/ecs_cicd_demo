@@ -2,7 +2,7 @@
     "executionRoleArn": "arn:aws:iam::387279199735:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
-            "name": "ecs-cicd-demo",
+            "name": "ecs-cicd-demo-container",
             "image": "<IMAGE1_NAME>",
             "essential": true,
             "entryPoint": ["./docker_script.sh"],
