@@ -1,5 +1,5 @@
 {
-    "taskDefinition": "ecs-cicd-demo-web:19",
+    "taskDefinition": "ecs-cicd-demo-web:20",
     "cluster": "ecs-cicd-demo-cluster",
     "loadBalancers": [
         {
