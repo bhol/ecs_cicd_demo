@@ -6,7 +6,7 @@ Getting Started
 
 - Change directory into your newly created project.
 
-    cd ecs_cicd_demo
+    cd ecs_cicd_demo2
 
 - Create a Python virtual environment.
 
@@ -27,3 +27,16 @@ Getting Started
 - Run your project.
 
     env/bin/pserve development.ini
+
+------------- OR -----------------
+
+- Run your project on docker.
+
+    docker-compose up --build
+
+- Tear down your docker containers and network
+    
+    docker-compose down
+
+
+
