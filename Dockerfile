@@ -8,4 +8,4 @@ RUN apt-get update
 RUN pip3 install setuptools
 RUN pip3 install -r requirements.txt
 
-EXPOSE 80
+EXPOSE 80 8080
