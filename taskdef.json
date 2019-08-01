@@ -2,7 +2,7 @@
     "executionRoleArn": "arn:aws:iam::387279199735:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
-            "name": "ecs-cicd-demo-container",
+            "name": "web-container",
             "image": "<IMAGE1_NAME>",
             "essential": true,
             "entryPoint": ["./docker_script.sh"],
@@ -11,6 +11,11 @@
                     "hostPort": 80,
                     "protocol": "tcp",
                     "containerPort": 80
+                },
+                {
+                    "hostPort": 8080,
+                    "protocol": "tcp",
+                    "containerPort": 8080
                 }
             ]
         }
@@ -21,5 +26,5 @@
     "networkMode": "awsvpc",
     "cpu": "256",
     "memory": "512",
-    "family": "ecs-cicd-demo-web"
+    "family": "codepipeline-demo"
 }
