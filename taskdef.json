@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "webapp",
-            "image": "387279199735.dkr.ecr.us-west-2.amazonaws.com/ecs_cicd_demo",
+            "image": "<IMAGE1_NAME>",
             "essential": true,
             "entryPoint": ["./docker_script.sh"],
             "portMappings": [
