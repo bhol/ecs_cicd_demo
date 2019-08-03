@@ -1,10 +1,10 @@
 {
-    "taskDefinition": "codepipeline-demo:1",
+    "taskDefinition": "codepipeline-cicd-demo:1",
     "cluster": "ecs-cicd-demo-cluster",
     "loadBalancers": [
         {
             "targetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:387279199735:targetgroup/target-group-1/1f087c0f69b240e9",
-            "containerName": "web-container",
+            "containerName": "webapp",
             "containerPort": 80
         }
     ],

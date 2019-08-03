@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="${request.static_url('ecs_cicd_demo:static/images/favicon.jpg')}"">
+    <link rel="shortcut icon" href="${request.static_url('ecs_cicd_demo:static/images/favicon.jpg')}">
 
     <!-- Custom styles for this scaffold -->
     <link href="${request.static_url('ecs_cicd_demo:static/css/theme.css')}" rel="stylesheet">
@@ -30,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <img class="logo img-responsive" src="${request.static_url('ecs_cicd_demo:static/images/get-cloudier-logo.jpg') }" alt="GET CLOUDIER logo">
+            <img class="logo img-responsive" src="${request.static_url('ecs_cicd_demo:static/images/get-cloudier-logo.jpg')}" alt="GET CLOUDIER logo">
           </div>
           <div class="col-md-10">
             ${ next.body() }
